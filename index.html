@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sangeetha ❤️ Monishwar</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    overflow:hidden;
+    background:black;
+    color:white;
+}
+
+/* PASSWORD */
+#passwordScreen{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#000000,#2a002a);
+}
+
+#passwordScreen h1{
+    color:#ff2d75;
+    text-shadow:0 0 20px #ff2d75;
+    font-size:40px;
+}
+
+input{
+    padding:14px;
+    border-radius:30px;
+    border:none;
+    margin-top:20px;
+    width:240px;
+    text-align:center;
+}
+
+button{
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    margin-top:25px;
+    cursor:pointer;
+    background:#ff2d75;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #ff2d75;
+}
+
+/* SLIDES */
+#main{
+    display:none;
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    opacity:0;
+    transform:scale(0.8);
+    transition:1s ease;
+}
+
+.slide.active{
+    opacity:1;
+    transform:scale(1);
+}
+
+.quote{
+    font-size:36px;
+    max-width:900px;
+    line-height:1.6;
+    text-shadow:0 0 25px #ff2d75,0 0 40px #ff007f;
+}
+
+.nextBtn{
+    position:absolute;
+    bottom:60px;
+    background:#ff2d75;
+}
+
+/* Floating Hearts */
+.heart{
+    position:absolute;
+    font-size:20px;
+    animation:float 6s linear infinite;
+}
+
+@keyframes float{
+    0%{transform:translateY(100vh);opacity:1;}
+    100%{transform:translateY(-10vh);opacity:0;}
+}
+
+@media(max-width:600px){
+    .quote{font-size:20px;}
+}
+</style>
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+<source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8b6d7f0e4.mp3?filename=romantic-piano-110624.mp3" type="audio/mp3">
+</audio>
+
+<div id="passwordScreen">
+    <h1>Sangeetha ❤️ Monishwar</h1>
+    <p>Enter Our Special Date (13102024)</p>
+    <input type="password" id="passwordInput">
+    <button onclick="unlock()">Unlock Our Love</button>
+</div>
+
+<div id="main">
+
+<!-- 20 ROMANTIC QUOTES -->
+
+<div class="slide active"><div class="quote">"In a universe full of temporary moments, you became my forever."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"Sangeetha, loving you is the easiest thing my heart has ever done."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"Monishwar found his home not in a place, but in your arms."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"Every heartbeat of mine whispers your name softly."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"Our story wasn’t written by chance, it was written by destiny."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"The day we met, my soul finally felt complete."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"When you smile, my world lights up brighter than stars."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"You are not just my love, you are my peace."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"If forever exists, I want it with you."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"Every moment with you feels like a beautiful dream."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"You are the reason my heart believes in miracles."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"Your love is the calm in my chaos."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"With you, love feels safe and endless."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"You turned my ordinary life into an extraordinary love story."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"Your hand in mine is where I belong."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"Loving you is my favorite forever."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"Saishwar and Mogeetha are proof that love multiplies beautifully."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"Through storms and sunshine, I will always choose you."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"You are my today, my tomorrow, and all my forever."</div><button class="nextBtn" onclick="nextSlide()">Next ➜</button></div>
+
+<div class="slide"><div class="quote">"Sangeetha ❤️ Monishwar — a love written in eternity."</div></div>
+
+</div>
+
+<script>
+
+function unlock(){
+    let pass=document.getElementById("passwordInput").value;
+    let music=document.getElementById("bgMusic");
+
+    if(pass==="13102024"){
+        document.getElementById("passwordScreen").style.display="none";
+        document.getElementById("main").style.display="block";
+        music.volume=0.4;
+        music.play();
+    }
+}
+
+let current=0;
+const slides=document.querySelectorAll(".slide");
+
+function nextSlide(){
+    if(current<slides.length-1){
+        slides[current].classList.remove("active");
+        current++;
+        slides[current].classList.add("active");
+    }
+}
+
+/* floating hearts */
+setInterval(()=>{
+    let heart=document.createElement("div");
+    heart.innerHTML="❤️";
+    heart.classList.add("heart");
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.fontSize=(15+Math.random()*25)+"px";
+    document.body.appendChild(heart);
+    setTimeout(()=>heart.remove(),6000);
+},500);
+
+</script>
+
+</body>
+</html>
